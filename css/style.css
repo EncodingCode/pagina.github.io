@@ -1,0 +1,214 @@
+:root {
+    --azul: #06f;
+    --plomo: #ccc;
+    --blanco: #fff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.header {
+    background-color: var(--blanco);
+    width: 90%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.header img {
+    float: left;
+    width: 70px;
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+.header > h1 {
+    padding: 20px;
+    float: left;
+}
+
+.header ul {
+    float: right;
+    position: relative;
+    top: 13px;
+    right: 20px;
+}
+
+.header li {
+    list-style: none;
+    display: inline-block;
+}
+
+.header a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    margin: 5px;
+}
+
+.header a:hover {
+    border-bottom: 3px solid #0066ff;
+}
+
+.main {
+    width: 90%;
+    margin: auto;
+}
+
+.contenido {
+    width: 68.5%;
+    margin-right: 1.5%;
+    float: left;
+    color: black;
+}
+
+.main .contenido div {
+    background-color: rgb(66, 146, 250);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.login {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login form {
+    display: block;
+    background-color: darkgray;
+    padding: 20px 20px 25px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.burbuja::after {
+    content: '';
+    position: absolute;
+    border-top: 15px solid darkgray;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    bottom: -30px;
+    left: calc(50% - 15px);
+}
+
+.login form label {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.login form input {
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.login form input:focus {
+    border: 1px solid var(--azul);
+    border-radius: 3px;
+}
+
+.login .btn-login {
+    margin: 20px 0px 0px;
+}
+
+.login .btn-login > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    border-radius: 5px;
+    font-size: 14px;
+    width: 90px;
+    margin: auto;
+    text-align: center;
+}
+
+.btn-login > a:hover {
+    background-color: rgb(0, 68, 170);
+}
+
+.carrusel {
+    clear: both;
+    width: 90%;
+    margin: auto;
+}
+
+.carrusel .img {
+    float: left;
+    width: 25%;
+    margin: 10px auto;
+}
+
+.carrusel .img img {
+    display: block;
+    margin: auto;
+}
+
+.carrusel .img img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+footer {
+    clear: both;
+    width: 90%;
+    background-color: #000;
+    color: var(--blanco);
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+    font-size: 12px;
+}
+
+@media (max-width: 835px) {
+    .contenido {
+        width: 100%;
+    }
+    
+    .login {
+        width: 100%;
+    }
+
+    .carrusel .img {
+        width: 33%;
+    }
+}
+
+@media (max-width: 800px) {
+    .header ul {
+        float: none;
+        clear: both;
+        position: static;
+    }
+
+    .carrusel .img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .header li {
+        display: block;
+    }
+
+    .header li > a {
+        display: block;
+        text-align: center;
+    }
+
+    .carrusel .img {
+        width: 100%;
+    }
+}

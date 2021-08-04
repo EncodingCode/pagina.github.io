@@ -2,6 +2,7 @@
     --azul: #06f;
     --plomo: #ccc;
     --blanco: #fff;
+    --negro: #000;
 }
 
 * {
@@ -29,9 +30,25 @@ body {
     left: 7px;
 }
 
-.header > h1 {
+.header h1 {
     padding: 20px;
     float: left;
+}
+
+header > a {
+    color: #000;
+}
+
+header > a:hover {
+    cursor: pointer;
+}
+
+header > a:hover h1 {
+    color: #0066ff;
+}
+
+header > a:hover img {
+    opacity: 0.80;
 }
 
 .header ul {
@@ -46,7 +63,7 @@ body {
     display: inline-block;
 }
 
-.header a {
+.header .navbar {
     display: inline-block;
     text-decoration: none;
     color: #000;
@@ -54,7 +71,7 @@ body {
     margin: 5px;
 }
 
-.header a:hover {
+.header .navbar:hover {
     border-bottom: 3px solid #0066ff;
 }
 
@@ -74,6 +91,11 @@ body {
     background-color: rgb(66, 146, 250);
     padding: 20px;
     margin-bottom: 10px;
+}
+
+.main .contenido div p::selection {
+    color: var(--blanco);
+    background-color: var(--negro);
 }
 
 .login {
@@ -203,7 +225,7 @@ footer {
         display: block;
     }
 
-    .header li > a {
+    .header li > .navbar {
         display: block;
         text-align: center;
     }

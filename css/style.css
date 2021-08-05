@@ -73,6 +73,7 @@ header > a:hover img {
 
 .header .navbar:hover {
     border-bottom: 3px solid #0066ff;
+    color: var(--azul);
 }
 
 .main {
@@ -165,20 +166,17 @@ header > a:hover img {
     clear: both;
     width: 90%;
     margin: auto;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.carrusel .img {
-    float: left;
-    width: 25%;
-    margin: 10px auto;
+.carrusel div img {
+    width: 175px;
 }
 
-.carrusel .img img {
-    display: block;
-    margin: auto;
-}
-
-.carrusel .img img:hover {
+.carrusel div img:hover {
     opacity: 0.5;
     cursor: pointer;
 }

@@ -54,7 +54,7 @@ header > a:hover img {
 .header ul {
     float: right;
     position: relative;
-    top: 13px;
+    top: 15px;
     right: 20px;
 }
 
@@ -173,7 +173,8 @@ header > a:hover img {
 }
 
 .carrusel div img {
-    width: 175px;
+    width: 150px;
+    margin: auto 50px;
 }
 
 .carrusel div img:hover {
@@ -207,10 +208,12 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .header ul {
-        float: none;
+    .header  ul {
+        /* float: none; */
         clear: both;
         position: static;
+        display: block;
+        margin: auto;
     }
 
     .carrusel .img {
@@ -219,6 +222,9 @@ footer {
 }
 
 @media (max-width: 450px) {
+    .header ul {
+        float: none;
+    }
     .header li {
         display: block;
     }
@@ -230,5 +236,9 @@ footer {
 
     .carrusel .img {
         width: 100%;
+    }
+
+    .header h1 {
+        font-size: 26px;
     }
 }
